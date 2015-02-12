@@ -1,0 +1,21 @@
+      "We will be using the modular style of Sinatra app,
+      which is why we need to require ‘sinatra/base’."
+Q: can we still do a regular style Sinatra app with ‘sinatra/base’?
+    or does that break it?
+
+
+
+    "Why id.to_i? id is coming in as a string (like "1" or "2")
+    from the URL but we want it to be an integer."
+Q: why can't we find id by string, instead?
+      NO.
+      the 'database total' is an integer, so we need to convert the string.to_i to compare to the 'total'
+
+
+def self.raw_skills  v.  def self.raw_skill(id)
+
+
+
+is edit normally a 2-step process?
+  - edit route:   form for editing
+  - update route: submit updates to db

@@ -12,4 +12,8 @@
 
 ### Your Job
 
-CRUD out the functionality for a user to be able to add a skill (id, name, status), see all skills, edit a skill, and delete a skill. 
+CRUD out the functionality for a user to be able to:
+  C: add a skill (id, name, status),
+  R: see all skills,
+  U: edit a skill,
+  D: delete a skill. 

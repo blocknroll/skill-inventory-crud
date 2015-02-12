@@ -1,0 +1,53 @@
+https://github.com/turingschool-examples/skill-inventory-crud
+
+task manager tutorial: (for reference)
+part 1: http://tutorials.jumpstartlab.com/projects/task_manager.html
+part 2: https://github.com/turingschool/lesson_plans/blob/master/ruby_02-web_applications_with_ruby/crud_sinatra.markdown
+
+
+
+TYPO:
+
+Showing Individual Tasks:
+  "Next, we create an instance varaible @task"
+                              variable
+
+
+
+# PROCESS
+# ======================================================= #
+
+GETTING CONFIGURED
+  make Gem file
+  make config.ru
+
+PROJECT FOLDER STRUCTURE
+  app:
+    models
+    views
+    controllers
+    public
+      img
+      css
+      js
+      fonts
+  db
+
+GETTING THE APP RUNNING
+  create controller file
+  set 1st route:
+    get '/' do
+
+
+USING VIEWS
+  erb :dashboard
+    add links with basic functionality that we want
+    /tasks
+    /tasks/new
+
+
+ADDING A TASK INDEX ROUTE
+  get '/tasks' do
+    @tasks = ["task1", "task2", "task3"]
+    erb :index
+  end
