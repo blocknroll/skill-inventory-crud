@@ -20,15 +20,22 @@ class SkillInventoryTest < ModelTest
     assert_equal 3, all_skills.count
   end
 
-  def test_it_can_find_the_task_by_id
-    TaskManager.create({ :title => "go shopping", :description => "eggs, milk, butter"})
-    TaskManager.create({ :title => "school", :description => "write tests"})
-    TaskManager.create({ :title => "exercise", :description => "swim"})
+  def test_it_can_find_the_skill_by_id
+    SkillInventory.create({ :name => "eating", :status => "good" })
+    SkillInventory.create({ :name => "sleeping", :status => "ok" })
+    SkillInventory.create({ :name => "walking dogs", :status => "pretty good" })
 
-    task = TaskManager.find(3)
-    assert_equal "exercise", task.title
-    assert_equal "swim", task.description
-    assert_equal 3, task.id
+    skill = SkillInventory.find(3)
+    assert_equal "walking dogs", skill.name
+    assert_equal "pretty good", skill.status
+    assert_equal 3, skill.id
+  end
+
+  def test_it_can_update_a_skill
+    SkillInventory.create({ :name => "eating", :status => "good" })
+    SkillInventory.update(1, { :name => "eating food", :status => "good" })
+
+    assert_equal "eating food", SkillInventory.all.first.name
   end
 
 end
