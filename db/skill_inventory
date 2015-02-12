@@ -1,12 +1,3 @@
 ---
-skills:
-- id: 7
-  name: eating food
-  status: eat fantastic amounts of food
-- id: 8
-  name: sleeping
-  status: rest up
-- id: 10
-  name: working
-  status: keep going
-total: 10
+skills: []
+total: 0
