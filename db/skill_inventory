@@ -1,12 +1,15 @@
 ---
 skills:
-- id: 7
-  name: eating food
-  status: eat fantastic amounts of food
-- id: 8
-  name: sleeping
-  status: rest up
-- id: 10
-  name: working
-  status: keep going
-total: 10
+- id: 1
+  name: walk dogs
+  status: pretty good
+- id: 2
+  name: eat
+  status: ''
+- id: 3
+  name: sleep
+  status: ''
+- id: 4
+  name: drink
+  status: smoothies!
+total: 4
