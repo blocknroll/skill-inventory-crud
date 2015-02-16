@@ -4,12 +4,15 @@ skills:
   name: walk dogs
   status: pretty good
 - id: 2
-  name: eat
-  status: ''
+  name: eat food
+  status: veggie power!
 - id: 3
   name: sleep
   status: ''
 - id: 4
   name: drink
   status: smoothies!
-total: 4
+- id: 5
+  name: apply patterns
+  status: ''
+total: 5
