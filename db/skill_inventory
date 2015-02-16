@@ -12,4 +12,7 @@ skills:
 - id: 4
   name: drink
   status: smoothies!
-total: 4
+- id: 5
+  name: apply patterns
+  status: ''
+total: 5
