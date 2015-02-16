@@ -3,19 +3,24 @@ require_relative '../test_helper'
 class UserEditsSkillTest < FeatureTest
 
   def test_user_edits_a_skill
-    SkillInventory.create({ :name   => "updated name",
-                            :status => "updated status" })
 
-    visit '/skills'
-    click_link_or_button('New Skill')
-    assert_equal '/skills/new', current_path
-    fill_in 'skill[name]', with: "eating"
-    fill_in 'skill[status]', with: 'good'
-    click_link_or_button("add skill")
-    assert_equal '/skills', current_path
-    within('a') do
-      assert page.has_css?("eating")
+    SkillInventory.create({ :name   => "original name",
+                            :status => "original status" })
+
+    visit '/skills/1/edit'
+    fill_in 'skill[name]',   with: "updated name"
+    fill_in 'skill[status]', with: 'updated status'
+    click_link_or_button("update skill")
+
+    assert_equal '/skills/1', current_path
+
+    within('#name') do
+      assert page.has_content?("updated name")
     end
+    within('#status') do
+      assert page.has_content?("updated status")
+    end
+
   end
-  
+
 end

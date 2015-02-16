@@ -4,8 +4,8 @@ skills:
   name: walk dogs
   status: pretty good
 - id: 2
-  name: eat
-  status: ''
+  name: eat food
+  status: veggie power!
 - id: 3
   name: sleep
   status: ''
