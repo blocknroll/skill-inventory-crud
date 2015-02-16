@@ -1,4 +1,4 @@
-ENV['TASK_MANAGER_ENV'] ||= 'test'
+ENV['SKILL_INVENTORY_ENV'] ||= 'test'
 
 require 'bundler'
 Bundler.require

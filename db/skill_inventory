@@ -1,3 +1,15 @@
 ---
-skills: []
-total: 0
+skills:
+- id: 1
+  name: walk dogs
+  status: pretty good
+- id: 2
+  name: eat
+  status: ''
+- id: 3
+  name: sleep
+  status: ''
+- id: 4
+  name: drink
+  status: smoothies!
+total: 4
