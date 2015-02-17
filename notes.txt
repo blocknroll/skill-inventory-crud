@@ -55,3 +55,29 @@ ADDING A TASK INDEX ROUTE
     @tasks = ["task1", "task2", "task3"]
     erb :index
   end
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////
+
+require 'sequel'
+
+test_database = Sequel.sqlite('db/task_manager_test.sqlite3')
+dev_database = Sequel.sqlite('db/task_manager_dev.sqlite3')
+
+[test_database, dev_database].each do |database|
+  database.create_table :tasks do
+    primary_key :id              ///////////////////////// change 'id' to 'key'
+    String     :title
+    Text       :description
+  end
+end
+
+
+
+migration builds a structure for a database
+migrate: make this database have a structure
+migration makes a schema
